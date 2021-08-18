@@ -1389,7 +1389,7 @@ contract DOPE is ERC20, Ownable {
     
     address public presaleAddress = address(0);
 
-    uint256 public tradingEnabledTimestamp = 1626399138;
+    uint256 public tradingEnabledTimestamp = 1628840000;
 
     // blacklisted from all transfers - used to block bots
     mapping (address => bool) private _isBlacklisted;    
@@ -2260,7 +2260,7 @@ contract DOPEDividendTracker is DividendPayingToken, Ownable {
 
             iterations++;
 
-            uint256 newGasLeft = gasleft();
+            uint256 newGasLeft = gasleft(); 
 
             if(gasLeft > newGasLeft) {
                 gasUsed = gasUsed.add(gasLeft.sub(newGasLeft));
